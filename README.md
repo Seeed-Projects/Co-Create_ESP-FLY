@@ -1,4 +1,4 @@
-# ESP-FLY
+# ESP-FLY DIY Kit
 
 ![ESP-FLY Overview](https://files.seeedstudio.com/products/114993694/img/1-114993694-ESP-FLY-DIY-Kit.jpg)
 
@@ -63,14 +63,11 @@ With the included 1S 250 mAh LiPo battery, the platform has been tested for up t
 
 ## Project Resources
 
-- **ESP-FLY Drone Tutorial Video**  
-  https://www.youtube.com/watch?v=V_mZsiZcy7s
+- **ESP-FLY Drone Tutorial Video** https://www.youtube.com/watch?v=V_mZsiZcy7s
 
-- **ESP-FLY Tutorial Blog**  
-  https://www.elektormagazine.com/labs/esp-fly-the-smallest-esp32-drone-you-can-build
+- **ESP-FLY Tutorial Blog** https://www.elektormagazine.com/labs/esp-fly-the-smallest-esp32-drone-you-can-build
 
-- **Radio Controller + Betaflight Firmware Tutorial**  
-  https://www.youtube.com/watch?v=QTmitUFotik
+- **Radio Controller + Betaflight Firmware Tutorial** https://www.youtube.com/watch?v=QTmitUFotik
 
 ## Application
 
@@ -90,8 +87,8 @@ With the included 1S 250 mAh LiPo battery, the platform has been tested for up t
 | Wireless | Wi-Fi, Bluetooth 5.0 |
 | IMU Sensor | MPU-6050 6-DoF |
 | Motor Drivers | 4 × SI2300 N-channel MOSFETs |
-| Motors | 4 × coreless DC motors (6 × 15 mm, approx. 17 g thrust each) |
-| Dimensions | 46 × 46 × 27 mm (excluding propellers) |
+| Motors | 4 × 615 coreless DC motors (70,000 RPM, approx. 17 g thrust each) |
+| Dimensions | 67 × 67 × 31 mm (including propellers) or 46 × 46 × 29 mm (excluding propellers) |
 | Frame Class | 50 mm micro drone |
 | Weight | ~18 g / 25 g / 28 g (without LiPo / with LiPo / with FPV camera) |
 | Battery | 1S Li-Po 3.7 V, 250 mAh, JST-PH 2-pin |
@@ -125,9 +122,10 @@ The drone frame supports both a standard top cover and an optional FPV top cover
 
 ## Parts List (Included in the Kit)
 
-- 1 × Seeed Studio XIAO ESP32S3 microcontroller with pre-soldered headers and antenna
+- 1 × Seeed Studio XIAO ESP32-S3 microcontroller with pre-soldered headers
+- 1 × 2.4G Antenna for XIAO ESP32-S3
 - 1 × IMU / motor driver module (pre-assembled)
-- 2 × 20AWG red/black wires for joining battery power to the XIAO
+- 2 × 24AWG red/black wires for joining battery power to the XIAO
 - 4 × coreless motors (6 × 15 mm), including 2 CW and 2 CCW motors with pre-attached wires
 - 8 × propellers (30 mm tri-blade), including 4 CW and 4 CCW props
 - 1 × 1S LiPo battery (3.7 V, 250 mAh)
