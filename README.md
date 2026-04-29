@@ -1,4 +1,4 @@
-# ESP-FLY DIY Kit
+# ESP-FLY DIY Drone Kit
 
 ![ESP-FLY Overview](https://files.seeedstudio.com/products/114993694/img/1-114993694-ESP-FLY-DIY-Kit.jpg)
 
