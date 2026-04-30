@@ -63,7 +63,7 @@ With the included 1S 250 mAh LiPo battery, the platform has been tested for up t
 
 ## Project Resources
 
-- **ESP-FLY Drone Tutorial Video** https://www.youtube.com/watch?v=V_mZsiZcy7s
+- **ESP-FLY Drone Tutorial Video** https://youtu.be/3Y_drsQtMs4
 
 - **ESP-FLY Tutorial Blog** https://www.elektormagazine.com/labs/esp-fly-the-smallest-esp32-drone-you-can-build
 
