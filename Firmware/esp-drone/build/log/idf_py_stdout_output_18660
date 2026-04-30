@@ -1,0 +1,64 @@
+-- Found Git: C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1") 
+-- Component directory C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/general does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/spi_devices does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/core does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/lib does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig
+Loading defaults file C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig.defaults...
+C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig.defaults:1 CONFIG_ESP32_PHY_MAX_WIFI_TX_POWER was replaced with CONFIG_ESP_PHY_MAX_WIFI_TX_POWER
+C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig.defaults:2 CONFIG_ESP32_PHY_MAX_TX_POWER was replaced with CONFIG_ESP_PHY_MAX_TX_POWER
+Loading defaults file C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig.defaults.esp32s3...
+C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig.defaults.esp32s3:2 CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240
+C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/sdkconfig.defaults.esp32s3:3 CONFIG_ESP32S3_DEFAULT_CPU_FREQ_MHZ was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe (found version "3.11.2") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Could NOT find Threads (missing: Threads_FOUND) 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "ESPDrone" version: 2bcb94f-dirty
+-- Adding linker script C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.7/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: adc app_trace app_update bootloader bootloader_support bt buzzer cmock config console crazyflie cxx deck driver dsp_lib eeprom efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap hmc5883l http_parser i2c_bus idf_test ieee802154 json led log lwip main mbedtls motors mpu6050 mqtt ms5611 newlib nvs_flash openthread partition_table perfmon platform pmw3901 protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs vl53l0 vl53l1 wear_levelling wifi wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/general/adc C:/Espressif/frameworks/esp-idf-v5.0.7/components/app_trace C:/Espressif/frameworks/esp-idf-v5.0.7/components/app_update C:/Espressif/frameworks/esp-idf-v5.0.7/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0.7/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0.7/components/bt C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/general/buzzer C:/Espressif/frameworks/esp-idf-v5.0.7/components/cmock C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/config C:/Espressif/frameworks/esp-idf-v5.0.7/components/console C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/core/crazyflie C:/Espressif/frameworks/esp-idf-v5.0.7/components/cxx C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/deck C:/Espressif/frameworks/esp-idf-v5.0.7/components/driver C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/lib/dsp_lib C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices/eeprom C:/Espressif/frameworks/esp-idf-v5.0.7/components/efuse C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_event C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.0.7/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.0.7/components/espcoredump C:/Espressif/frameworks/esp-idf-v5.0.7/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0.7/components/fatfs C:/Espressif/frameworks/esp-idf-v5.0.7/components/freertos C:/Espressif/frameworks/esp-idf-v5.0.7/components/hal C:/Espressif/frameworks/esp-idf-v5.0.7/components/heap C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices/hmc5883l C:/Espressif/frameworks/esp-idf-v5.0.7/components/http_parser C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_bus C:/Espressif/frameworks/esp-idf-v5.0.7/components/idf_test C:/Espressif/frameworks/esp-idf-v5.0.7/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.0.7/components/json C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/general/led C:/Espressif/frameworks/esp-idf-v5.0.7/components/log C:/Espressif/frameworks/esp-idf-v5.0.7/components/lwip C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/main C:/Espressif/frameworks/esp-idf-v5.0.7/components/mbedtls C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/general/motors C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices/mpu6050 C:/Espressif/frameworks/esp-idf-v5.0.7/components/mqtt C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices/ms5611 C:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib C:/Espressif/frameworks/esp-idf-v5.0.7/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.0.7/components/openthread C:/Espressif/frameworks/esp-idf-v5.0.7/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0.7/components/perfmon C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/platform C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/spi_devices/pmw3901 C:/Espressif/frameworks/esp-idf-v5.0.7/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.0.7/components/protocomm C:/Espressif/frameworks/esp-idf-v5.0.7/components/pthread C:/Espressif/frameworks/esp-idf-v5.0.7/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.0.7/components/soc C:/Espressif/frameworks/esp-idf-v5.0.7/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0.7/components/spiffs C:/Espressif/frameworks/esp-idf-v5.0.7/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.0.7/components/touch_element C:/Espressif/frameworks/esp-idf-v5.0.7/components/ulp C:/Espressif/frameworks/esp-idf-v5.0.7/components/unity C:/Espressif/frameworks/esp-idf-v5.0.7/components/usb C:/Espressif/frameworks/esp-idf-v5.0.7/components/vfs C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices/vl53l0 C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/i2c_devices/vl53l1 C:/Espressif/frameworks/esp-idf-v5.0.7/components/wear_levelling C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/components/drivers/general/wifi C:/Espressif/frameworks/esp-idf-v5.0.7/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.0.7/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.0.7/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Max/Desktop/esp-drone-2/ESP-Drone/Firmware/esp-drone/build

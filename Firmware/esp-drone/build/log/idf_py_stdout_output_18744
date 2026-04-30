@@ -1,0 +1,470 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420137ef
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1858
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x2f68
+SHA-256 comparison failed:
+Calculated: a6705381dc11110ccddbeb590f3dede8d56ddbd73fde4c47d5d2b29e7cc0ae49
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9930
+[0;32mI (43) boot: ESP-IDF v5.0.7-dirty 2nd stage bootloader[0m
+[0;32mI (43) boot: compile time 15:52:52[0m
+[0;32mI (43) boot: Multicore bootloader[0m
+[0;32mI (45) boot: chip revision: v0.2[0m
+[0;32mI (49) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (55) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (59) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (64) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (69) boot: Enabling RNG early entropy source...[0m
+[0;32mI (74) boot: Partition Table:[0m
+[0;32mI (78) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (93) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (100) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (108) boot: End of partition table[0m
+[0;32mI (112) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=26adch (158428) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00036b04 vaddr=3fc9a700 size=04ff8h ( 20472) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=0003bb04 vaddr=40374000 size=04514h ( 17684) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=953f0h (611312) map[0m
+[0;32mI (213) esp_image: segment 4: paddr=000d5418 vaddr=40378514 size=12118h ( 74008) load[0m
+[0;32mI (234) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (234) boot: Disabling RNG early entropy source...[0m
+[0;32mI (245) cpu_start: Multicore app[0m
+[0;32mI (246) cpu_start: Pro cpu up.[0m
+[0;32mI (246) cpu_start: Starting app cpu, entry point is 0x40375628[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (264) cpu_start: Application information:[0m
+[0;32mI (267) cpu_start: Project name:     ESPDrone[0m
+[0;32mI (272) cpu_start: App version:      2bcb94f-dirty[0m
+[0;32mI (277) cpu_start: Compile time:     Jan 26 2025 20:05:07[0m
+[0;32mI (283) cpu_start: ELF file SHA256:  11bd6f35a8be6a5b...[0m
+[0;32mI (289) cpu_start: ESP-IDF:          v5.0.7-dirty[0m
+[0;32mI (295) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (299) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (304) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (309) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (316) heap_init: At 3FCB54E0 len 00034230 (208 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (329) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (335) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (342) spi_flash: detected chip: gd[0m
+[0;32mI (346) spi_flash: flash io: qio[0m
+[0;33mW (350) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (358) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) app_start: Starting scheduler on CPU1[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (406) PLATFORM: set active config [0m
+[0;32mI (407) main_task: Returned from app_main()[0m
+[0;32mI (407) gpio: GPIO[11]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (414) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (423) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (433) pp: pp rom version: e7ae62f[0m
+[0;32mI (437) net80211: net80211 rom version: e7ae62f[0m
+I (443) wifi:wifi driver task: 3fcb8e28, prio:23, stack:6656, core=0
+[0;32mI (448) system_api: Base MAC address is not set[0m
+[0;32mI (453) system_api: read default base MAC address from EFUSE[0m
+I (467) wifi:wifi firmware version: 23fdf80
+I (467) wifi:wifi certification version: v7.0
+I (467) wifi:config NVS flash: enabled
+I (471) wifi:config nano formating: disabled
+I (475) wifi:Init data frame dynamic rx buffer num: 32
+I (480) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (488) wifi:Init dynamic tx buffer num: 32
+I (492) wifi:Init static tx FG buffer num: 2
+I (496) wifi:Init static rx buffer size: 1600
+I (500) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+[0;32mI (508) wifi_init: rx ba win: 6[0m
+[0;32mI (512) wifi_init: tcpip mbox: 32[0m
+[0;32mI (516) wifi_init: udp mbox: 6[0m
+[0;32mI (519) wifi_init: tcp mbox: 6[0m
+[0;32mI (523) wifi_init: tcp tx win: 5760[0m
+[0;32mI (527) wifi_init: tcp rx win: 5760[0m
+[0;32mI (532) wifi_init: tcp mss: 1440[0m
+[0;32mI (535) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (547) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (582) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (633) wifi:mode : softAP (48:27:e2:e7:22:19)
+I (636) wifi:Total power save buffer number: 16
+I (636) wifi:Init max length of beacon: 752/752
+I (636) wifi:Init max length of beacon: 752/752
+[0;32mI (640) WIFI_UDP: wifi_init_softap complete.SSID:ESP-DRONE_4827E2E72219 password:12345678[0m
+[0;32mI (649) WIFI_UDP: Socket created[0m
+[0;32mI (652) WIFI_UDP: Socket bound, port 2390[0m
+[0;32mI (657) WIFI_UDP: UDP server create socket succeed!!![0m
+[0;32mI (1163) SYS: ----------------------------
+[0m
+[0;32mI (1163) SYS: ESPlane 2.0  is up and running!
+[0m
+[0;32mI (1164) I2CDRV:  i2c 1 driver install return = 0[0m
+[0;32mI (1167) EEPROM: spi_flash_init ... ![0m
+[0;32mI (1172) EEPROM: spi_flash_read ok ![0m
+Characterized using Default Vref
+[0;32mI (2383) I2CDRV:  i2c 0 driver install return = 0[0m
+[0;32mI (2384) SENSORS: MPU6050 I2C connection [OK].
+[0m
+[0;33mW (2738) ZR2: Z-down sensor [FAIL]
+[0m
+[0;33mW (2738) SENSORS: VL53L1X I2C connection [FAIL].
+[0m
+[0;32mI (2738) gpio: GPIO[34]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (2794) SENSORS: PMW3901 SPI connection [FAIL].
+[0m
+[0;32mI (2795) SENSORS: sensors init done[0m
+[0;32mI (2795) SENSORS: pitch_calib = 0.000000,roll_calib = 0.000000[0m
+[0;32mI (2800) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2809) ESTIMATOR: Using Complementary (1) estimator
+[0m
+[0;32mI (2815) POSITION_CONTROLLER: thrustBase = 42000,thrustMin  = 8000[0m
+[0;32mI (2822) SYS: wifilinkTest = 1 [0m
+[0;32mI (3325) SYS: pmTest = 1[0m
+[0;32mI (3325) SYS: workerTest = 1[0m
+[0;32mI (3325) SYS: systemTest = 1 [0m
+[0;32mI (3325) SYS: configblockTest = 1 [0m
+[0;32mI (3328) COMM: wifilinkTest = 1 [0m
+[0;32mI (3332) COMM: crtpTest = 1 [0m
+[0;32mI (3336) COMM: crtpserviceTest = 1 [0m
+[0;32mI (3340) COMM: platformserviceTest = 1 [0m
+[0;32mI (3344) COMM: consoleTest = 1 [0m
+[0;32mI (3348) COMM: paramTest = 1 [0m
+[0;32mI (3352) SYS: commTest = 1 [0m
+[0;32mI (3355) SYS: commanderTest = 1 [0m
+[0;32mI (5173) SYS: stabilizerTest = 1 [0m
+[0;32mI (5173) SYS: estimatorKalmanTaskTest = 1 [0m
+[0;32mI (5173) SYS: memTest = 1 [0m
+[0;32mI (5174) STAB: Wait for sensor calibration...
+[0m
+[0;32mI (5179) SYS: systemStart ! selftestPassed = 1[0m
+[0;32mI (6164) SYSLOAD: Task dump[0m
+[0;32mI (6165) SYSLOAD: Load	Stack left	Name	PRI[0m
+[0;32mI (6165) SYSLOAD: nan 	2312 	Tmr Svc 	1[0m
+[0;32mI (6166) SYSLOAD: nan 	1240 	IDLE0 	0[0m
+[0;32mI (6171) SYSLOAD: nan 	1232 	IDLE1 	0[0m
+[0;32mI (6175) SYSLOAD: nan 	4168 	SENSORS 	4[0m
+[0;32mI (6180) SYSLOAD: nan 	1284 	UDP_TX 	3[0m
+[0;32mI (6184) SYSLOAD: nan 	5340 	CRTP-RX 	2[0m
+[0;32mI (6188) SYSLOAD: nan 	3156 	PWRMGNT 	0[0m
+[0;32mI (6193) SYSLOAD: nan 	2300 	tiT 	18[0m
+[0;32mI (6197) SYSLOAD: nan 	3148 	STABILIZER 	5[0m
+[0;32mI (6202) SYSLOAD: nan 	1672 	sys_evt 	20[0m
+[0;32mI (6207) SYSLOAD: nan 	3084 	UDP_RX 	3[0m
+[0;32mI (6211) SYSLOAD: nan 	288 	WIFILINK 	3[0m
+[0;32mI (6216) SYSLOAD: nan 	2312 	LOG 	2[0m
+[0;32mI (6220) SYSLOAD: nan 	1324 	CRTP-TX 	2[0m
+[0;32mI (6224) SYSLOAD: nan 	1300 	PARAM 	2[0m
+[0;32mI (6229) SYSLOAD: nan 	1260 	CMDHL 	2[0m
+[0;32mI (6233) SYSLOAD: nan 	520 	ipc0 	2[0m
+[0;32mI (6237) SYSLOAD: nan 	1284 	MEM 	2[0m
+[0;32mI (6241) SYSLOAD: nan 	1344 	KALMAN 	1[0m
+[0;32mI (6246) SYSLOAD: nan 	3548 	SYSTEM 	2[0m
+[0;32mI (6250) SYSLOAD: nan 	1272 	LEDSEQCMD 	1[0m
+[0;32mI (6255) SYSLOAD: nan 	3192 	esp_timer 	22[0m
+[0;32mI (6259) SYSLOAD: nan 	4300 	wifi 	23[0m
+[0;32mI (6264) SYSLOAD: nan 	560 	ipc1 	24[0m
+[0;32mI (6268) SYSLOAD: Free heap: 181720 bytes[0m
+[0;32mI (19792) SENSORS: isBiasValueFound![0m
+[0;32mI (19793) STAB: Ready to fly.
+[0m
+[0;32mI (1154) SYS: ----------------------------
+[0m
+[0;32mI (1154) SYS: ESPlane 2.0  is up and running!
+[0m
+[0;32mI (1155) I2CDRV:  i2c 1 driver install return = 0[0m
+[0;32mI (1158) EEPROM: spi_flash_init ... ![0m
+[0;32mI (1163) EEPROM: spi_flash_read ok ![0m
+Characterized using Default Vref
+[0;32mI (2424) I2CDRV:  i2c 0 driver install return = 0[0m
+[0;32mI (2424) SENSORS: MPU6050 I2C connection [OK].
+[0m
+[0;33mW (2779) ZR2: Z-down sensor [FAIL]
+[0m
+[0;33mW (2779) SENSORS: VL53L1X I2C connection [FAIL].
+[0m
+[0;32mI (2780) gpio: GPIO[34]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (2835) SENSORS: PMW3901 SPI connection [FAIL].
+[0m
+[0;32mI (2836) SENSORS: sensors init done[0m
+[0;32mI (2836) SENSORS: pitch_calib = 0.000000,roll_calib = 0.000000[0m
+[0;32mI (2841) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2850) ESTIMATOR: Using Complementary (1) estimator
+[0m
+[0;32mI (2856) POSITION_CONTROLLER: thrustBase = 42000,thrustMin  = 8000[0m
+[0;32mI (2863) SYS: wifilinkTest = 1 [0m
+[0;32mI (3366) SYS: pmTest = 1[0m
+[0;32mI (3366) SYS: workerTest = 1[0m
+[0;32mI (3366) SYS: systemTest = 1 [0m
+[0;32mI (3366) SYS: configblockTest = 1 [0m
+[0;32mI (3369) COMM: wifilinkTest = 1 [0m
+[0;32mI (3373) COMM: crtpTest = 1 [0m
+[0;32mI (3377) COMM: crtpserviceTest = 1 [0m
+[0;32mI (3381) COMM: platformserviceTest = 1 [0m
+[0;32mI (3385) COMM: consoleTest = 1 [0m
+[0;32mI (3389) COMM: paramTest = 1 [0m
+[0;32mI (3393) SYS: commTest = 1 [0m
+[0;32mI (3396) SYS: commanderTest = 1 [0m
+[0;32mI (5214) SYS: stabilizerTest = 1 [0m
+[0;32mI (5214) SYS: estimatorKalmanTaskTest = 1 [0m
+[0;32mI (5214) SYS: memTest = 1 [0m
+[0;32mI (5215) STAB: Wait for sensor calibration...
+[0m
+[0;32mI (5220) SYS: systemStart ! selftestPassed = 1[0m
+[0;32mI (6155) SYSLOAD: Task dump[0m
+[0;32mI (6156) SYSLOAD: Load	Stack left	Name	PRI[0m
+[0;32mI (6156) SYSLOAD: nan 	2312 	Tmr Svc 	1[0m
+[0;32mI (6157) SYSLOAD: nan 	1240 	IDLE0 	0[0m
+[0;32mI (6162) SYSLOAD: nan 	1232 	IDLE1 	0[0m
+[0;32mI (6166) SYSLOAD: nan 	1220 	UDP_TX 	3[0m
+[0;32mI (6170) SYSLOAD: nan 	5276 	CRTP-RX 	2[0m
+[0;32mI (6175) SYSLOAD: nan 	3156 	PWRMGNT 	0[0m
+[0;32mI (6179) SYSLOAD: nan 	2296 	tiT 	18[0m
+[0;32mI (6183) SYSLOAD: nan 	3148 	STABILIZER 	5[0m
+[0;32mI (6188) SYSLOAD: nan 	1668 	sys_evt 	20[0m
+[0;32mI (6193) SYSLOAD: nan 	3084 	UDP_RX 	3[0m
+[0;32mI (6197) SYSLOAD: nan 	288 	WIFILINK 	3[0m
+[0;32mI (6202) SYSLOAD: nan 	2312 	LOG 	2[0m
+[0;32mI (6206) SYSLOAD: nan 	1324 	CRTP-TX 	2[0m
+[0;32mI (6210) SYSLOAD: nan 	1300 	PARAM 	2[0m
+[0;32mI (6215) SYSLOAD: nan 	1260 	CMDHL 	2[0m
+[0;32mI (6219) SYSLOAD: nan 	520 	ipc0 	2[0m
+[0;32mI (6223) SYSLOAD: nan 	1284 	MEM 	2[0m
+[0;32mI (6227) SYSLOAD: nan 	1344 	KALMAN 	1[0m
+[0;32mI (6232) SYSLOAD: nan 	3548 	SYSTEM 	2[0m
+[0;32mI (6236) SYSLOAD: nan 	1272 	LEDSEQCMD 	1[0m
+[0;32mI (6241) SYSLOAD: nan 	3192 	esp_timer 	22[0m
+[0;32mI (6246) SYSLOAD: nan 	4296 	wifi 	23[0m
+[0;32mI (6250) SYSLOAD: nan 	4088 	SENSORS 	4[0m
+[0;32mI (6255) SYSLOAD: nan 	560 	ipc1 	24[0m
+[0;32mI (6259) SYSLOAD: Free heap: 181504 bytes[0m
+[0;32mI (6445) SENSORS: isBiasValueFound![0m
+[0;32mI (6446) STAB: Ready to fly.
+[0m
+I (9081) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (9082) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (9290) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (9291) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (9502) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (9503) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (9712) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (9712) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (9921) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (9922) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (10131) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (10132) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (10343) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (10344) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (10568) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (10569) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (10780) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (10781) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (10990) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (10991) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (11200) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (11201) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (11578) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (11579) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (11788) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (11789) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (11903) wifi:station: ea:0c:f0:0e:95:c4 leave, AID = 1, bss_flags is 658530, bss:0x3fcccc58
+I (11904) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (21362) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (21362) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (21574) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (21575) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (21786) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (21787) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (22002) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (22003) wifi:station: ea:0c:f0:0e:95:c4 join, AID=1, bgn, 20
+I (26086) wifi:station: ea:0c:f0:0e:95:c4 leave, AID = 1, bss_flags is 134242, bss:0x3fccd4ac
+I (26087) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (448) wifi:wifi driver task: 3fcb8e28, prio:23, stack:6656, core=0
+[0;32mI (453) system_api: Base MAC address is not set[0m
+[0;32mI (458) system_api: read default base MAC address from EFUSE[0m
+I (472) wifi:wifi firmware version: 23fdf80
+I (472) wifi:wifi certification version: v7.0
+I (472) wifi:config NVS flash: enabled
+I (476) wifi:config nano formating: disabled
+I (480) wifi:Init data frame dynamic rx buffer num: 32
+I (485) wifi:Init static rx mgmt buffer num: 5
+I (489) wifi:Init management short buffer num: 32
+I (493) wifi:Init dynamic tx buffer num: 32
+I (497) wifi:Init static tx FG buffer num: 2
+I (501) wifi:Init static rx buffer size: 1600
+I (505) wifi:Init static rx buffer num: 10
+I (509) wifi:Init dynamic rx buffer num: 32
+[0;32mI (513) wifi_init: rx ba win: 6[0m
+[0;32mI (517) wifi_init: tcpip mbox: 32[0m
+[0;32mI (521) wifi_init: udp mbox: 6[0m
+[0;32mI (525) wifi_init: tcp mbox: 6[0m
+[0;32mI (528) wifi_init: tcp tx win: 5760[0m
+[0;32mI (532) wifi_init: tcp rx win: 5760[0m
+[0;32mI (537) wifi_init: tcp mss: 1440[0m
+[0;32mI (540) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (545) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (552) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+I (587) wifi:mode : softAP (48:27:e2:e7:22:19)
+I (589) wifi:Total power save buffer number: 16
+I (590) wifi:Init max length of beacon: 752/752
+I (590) wifi:Init max length of beacon: 752/752
+[0;32mI (593) WIFI_UDP: wifi_init_softap complete.SSID:ESP-DRONE_4827E2E72219 password:12345678[0m
+[0;32mI (602) WIFI_UDP: Socket created[0m
+[0;32mI (606) WIFI_UDP: Socket bound, port 2390[0m
+[0;32mI (610) WIFI_UDP: UDP server create socket succeed!!![0m
+[0;32mI (1116) SYS: ----------------------------
+[0m
+[0;32mI (1116) SYS: ESPlane 2.0  is up and running!
+[0m
+[0;32mI (1117) I2CDRV:  i2c 1 driver install return = 0[0m
+[0;32mI (1120) EEPROM: spi_flash_init ... ![0m
+[0;32mI (1125) EEPROM: spi_flash_read ok ![0m
+Characterized using Default Vref
+[0;32mI (2386) I2CDRV:  i2c 0 driver install return = 0[0m
+[0;32mI (2386) SENSORS: MPU6050 I2C connection [OK].
+[0m
+[0;33mW (2741) ZR2: Z-down sensor [FAIL]
+[0m
+[0;33mW (2741) SENSORS: VL53L1X I2C connection [FAIL].
+[0m
+[0;32mI (2742) gpio: GPIO[34]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (2797) SENSORS: PMW3901 SPI connection [FAIL].
+[0m
+[0;32mI (2798) SENSORS: sensors init done[0m
+[0;32mI (2798) SENSORS: pitch_calib = 0.000000,roll_calib = 0.000000[0m
+[0;32mI (2803) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2812) ESTIMATOR: Using Complementary (1) estimator
+[0m
+[0;32mI (2818) POSITION_CONTROLLER: thrustBase = 42000,thrustMin  = 8000[0m
+[0;32mI (2825) SYS: wifilinkTest = 1 [0m
+[0;32mI (3328) SYS: pmTest = 1[0m
+[0;32mI (3328) SYS: workerTest = 1[0m
+[0;32mI (3328) SYS: systemTest = 1 [0m
+[0;32mI (3328) SYS: configblockTest = 1 [0m
+[0;32mI (3331) COMM: wifilinkTest = 1 [0m
+[0;32mI (3335) COMM: crtpTest = 1 [0m
+[0;32mI (3339) COMM: crtpserviceTest = 1 [0m
+[0;32mI (3343) COMM: platformserviceTest = 1 [0m
+[0;32mI (3347) COMM: consoleTest = 1 [0m
+[0;32mI (3351) COMM: paramTest = 1 [0m
+[0;32mI (3355) SYS: commTest = 1 [0m
+[0;32mI (3358) SYS: commanderTest = 1 [0m
+[0;32mI (5176) SYS: stabilizerTest = 1 [0m
+[0;32mI (5176) SYS: estimatorKalmanTaskTest = 1 [0m
+[0;32mI (5176) SYS: memTest = 1 [0m
+[0;32mI (5177) STAB: Wait for sensor calibration...
+[0m
+[0;32mI (5182) SYS: systemStart ! selftestPassed = 1[0m
+[0;32mI (6117) SYSLOAD: Task dump[0m
+[0;32mI (6118) SYSLOAD: Load	Stack left	Name	PRI[0m
+[0;32mI (6118) SYSLOAD: nan 	2312 	Tmr Svc 	1[0m
+[0;32mI (6119) SYSLOAD: nan 	1240 	IDLE0 	0[0m
+[0;32mI (6124) SYSLOAD: nan 	1232 	IDLE1 	0[0m
+[0;32mI (6128) SYSLOAD: nan 	4152 	SENSORS 	4[0m
+[0;32mI (6132) SYSLOAD: nan 	1220 	UDP_TX 	3[0m
+[0;32mI (6137) SYSLOAD: nan 	5388 	CRTP-RX 	2[0m
+[0;32mI (6141) SYSLOAD: nan 	3156 	PWRMGNT 	0[0m
+[0;32mI (6146) SYSLOAD: nan 	2296 	tiT 	18[0m
+[0;32mI (6150) SYSLOAD: nan 	3148 	STABILIZER 	5[0m
+[0;32mI (6155) SYSLOAD: nan 	1668 	sys_evt 	20[0m
+[0;32mI (6160) SYSLOAD: nan 	3084 	UDP_RX 	3[0m
+[0;32mI (6164) SYSLOAD: nan 	288 	WIFILINK 	3[0m
+[0;32mI (6168) SYSLOAD: nan 	2312 	LOG 	2[0m
+[0;32mI (6173) SYSLOAD: nan 	1324 	CRTP-TX 	2[0m
+[0;32mI (6177) SYSLOAD: nan 	1300 	PARAM 	2[0m
+[0;32mI (6182) SYSLOAD: nan 	1260 	CMDHL 	2[0m
+[0;32mI (6186) SYSLOAD: nan 	520 	ipc0 	2[0m
+[0;32mI (6190) SYSLOAD: nan 	1284 	MEM 	2[0m
+[0;32mI (6194) SYSLOAD: nan 	1344 	KALMAN 	1[0m
+[0;32mI (6199) SYSLOAD: nan 	3548 	SYSTEM 	2[0m
+[0;32mI (6203) SYSLOAD: nan 	1272 	LEDSEQCMD 	1[0m
+[0;32mI (6208) SYSLOAD: nan 	3192 	esp_timer 	22[0m
+[0;32mI (6212) SYSLOAD: nan 	4296 	wifi 	23[0m
+[0;32mI (6217) SYSLOAD: nan 	560 	ipc1 	24[0m
+[0;32mI (6221) SYSLOAD: Free heap: 181720 bytes[0m
+[0;32mI (6405) SENSORS: isBiasValueFound![0m
+[0;32mI (6407) STAB: Ready to fly.
+[0m
+I (481) wifi:wifi firmware version: 23fdf80
+I (482) wifi:wifi certification version: v7.0
+I (482) wifi:config NVS flash: enabled
+I (486) wifi:config nano formating: disabled
+I (490) wifi:Init data frame dynamic rx buffer num: 32
+I (495) wifi:Init static rx mgmt buffer num: 5
+I (499) wifi:Init management short buffer num: 32
+I (503) wifi:Init dynamic tx buffer num: 32
+I (507) wifi:Init static tx FG buffer num: 2
+I (511) wifi:Init static rx buffer size: 1600
+I (515) wifi:Init static rx buffer num: 10
+I (519) wifi:Init dynamic rx buffer num: 32
+[0;32mI (523) wifi_init: rx ba win: 6[0m
+[0;32mI (527) wifi_init: tcpip mbox: 32[0m
+[0;32mI (531) wifi_init: udp mbox: 6[0m
+[0;32mI (534) wifi_init: tcp mbox: 6[0m
+[0;32mI (538) wifi_init: tcp tx win: 5760[0m
+[0;32mI (542) wifi_init: tcp rx win: 5760[0m
+[0;32mI (546) wifi_init: tcp mss: 1440[0m
+[0;32mI (550) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (555) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (562) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+I (602) wifi:mode : softAP (48:27:e2:e7:22:19)
+I (604) wifi:Total power save buffer number: 16
+I (605) wifi:Init max length of beacon: 752/752
+I (605) wifi:Init max length of beacon: 752/752
+[0;32mI (609) WIFI_UDP: wifi_init_softap complete.SSID:ESP-DRONE_4827E2E72219 password:12345678[0m
+[0;32mI (617) WIFI_UDP: Socket created[0m
+[0;32mI (621) WIFI_UDP: Socket bound, port 2390[0m
+[0;32mI (626) WIFI_UDP: UDP server create socket succeed!!![0m
+[0;32mI (1132) SYS: ----------------------------
+[0m
+[0;32mI (1132) SYS: ESPlane 2.0  is up and running!
+[0m
+[0;32mI (1132) I2CDRV:  i2c 1 driver install return = 0[0m
+[0;32mI (1136) EEPROM: spi_flash_init ... ![0m
+[0;32mI (1140) EEPROM: spi_flash_read ok ![0m
+Characterized using Default Vref
+[0;32mI (2402) I2CDRV:  i2c 0 driver install return = 0[0m
+[0;32mI (2402) SENSORS: MPU6050 I2C connection [OK].
+[0m
+[0;33mW (2757) ZR2: Z-down sensor [FAIL]
+[0m
+[0;33mW (2757) SENSORS: VL53L1X I2C connection [FAIL].
+[0m
+[0;32mI (2757) gpio: GPIO[34]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (2813) SENSORS: PMW3901 SPI connection [FAIL].
+[0m
+[0;32mI (2814) SENSORS: sensors init done[0m
+[0;32mI (2814) SENSORS: pitch_calib = 0.000000,roll_calib = 0.000000[0m
+[0;32mI (2819) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2828) ESTIMATOR: Using Complementary (1) estimator
+[0m
+[0;32mI (2834) POSITION_CONTROLLER: thrustBase = 42000,thrustMin  = 8000[0m
+[0;32mI (2841) SYS: wifilinkTest = 1 [0m
+[0;32mI (3344) SYS: pmTest = 1[0m
+[0;32mI (3344) SYS: workerTest = 1[0m
+[0;32mI (3344) SYS: systemTest = 1 [0m
+[0;32mI (3344) SYS: configblockTest = 1 [0m
+[0;32mI (3347) COMM: wifilinkTest = 1 [0m
+[0;32mI (3351) COMM: crtpTest = 1 [0m
+[0;32mI (3355) COMM: crtpserviceTest = 1 [0m
+[0;32mI (3359) COMM: platformserviceTest = 1 [0m
+[0;32mI (3363) COMM: consoleTest = 1 [0m
+[0;32mI (3367) COMM: paramTest = 1 [0m
+[0;32mI (3371) SYS: commTest = 1 [0m
+[0;32mI (3374) SYS: commanderTest = 1 [0m
+[0;32mI (5192) SYS: stabilizerTest = 1 [0m
+[0;32mI (5192) SYS: estimatorKalmanTaskTest = 1 [0m
+[0;32mI (5192) SYS: memTest = 1 [0m
+[0;32mI (5193) STAB: Wait for sensor calibration...
+[0m
+[0;32mI (5198) SYS: systemStart ! selftestPassed = 1[0m
+[0;32mI (6

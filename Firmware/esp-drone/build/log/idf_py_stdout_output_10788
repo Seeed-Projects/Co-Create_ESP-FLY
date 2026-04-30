@@ -1,0 +1,154 @@
+[0;32mI (100) boot:  2 factory          factory app      00 00 ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048c26
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1858
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x2f68
+SHA-256 comparison failed:
+Calculated: a6705381dc11110ccddbeb590f3dede8d56ddbd73fde4c47d5d2b29e7cc0ae49
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9930
+[0;32mI (43) boot: ESP-IDF v5.0.7-dirty 2nd stage bootloader[0m
+[0;32mI (43) boot: compile time 15:52:52[0m
+[0;32mI (43) boot: Multicore bootloader[0m
+[0;32mI (45) boot: chip revision: v0.2[0m
+[0;32mI (49) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (55) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (59) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (64) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (69) boot: Enabling RNG early entropy source...[0m
+[0;32mI (74) boot: Partition Table:[0m
+[0;32mI (78) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (93) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (100) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (108) boot: End of partition table[0m
+[0;32mI (112) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=26adch (158428) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00036b04 vaddr=3fc9a700 size=04ff8h ( 20472) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=0003bb04 vaddr=40374000 size=04514h ( 17684) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=953f0h (611312) map[0m
+[0;32mI (213) esp_image: segment 4: paddr=000d5418 vaddr=40378514 size=12118h ( 74008) load[0m
+[0;32mI (234) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (234) boot: Disabling RNG early entropy source...[0m
+[0;32mI (245) cpu_start: Multicore app[0m
+[0;32mI (246) cpu_start: Pro cpu up.[0m
+[0;32mI (246) cpu_start: Starting app cpu, entry point is 0x40375628[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (264) cpu_start: Application information:[0m
+[0;32mI (267) cpu_start: Project name:     ESPDrone[0m
+[0;32mI (272) cpu_start: App version:      2bcb94f-dirty[0m
+[0;32mI (277) cpu_start: Compile time:     Jan 26 2025 20:05:07[0m
+[0;32mI (283) cpu_start: ELF file SHA256:  11bd6f35a8be6a5b...[0m
+[0;32mI (289) cpu_start: ESP-IDF:          v5.0.7-dirty[0m
+[0;32mI (295) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (299) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (304) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (309) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (316) heap_init: At 3FCB54E0 len 00034230 (208 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (329) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (335) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (342) spi_flash: detected chip: gd[0m
+[0;32mI (346) spi_flash: flash io: qio[0m
+[0;33mW (350) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (358) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) app_start: Starting scheduler on CPU1[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (398) PLATFORM: set active config [0m
+[0;32mI (399) main_task: Returned from app_main()[0m
+[0;32mI (399) gpio: GPIO[11]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (409) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (418) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (428) pp: pp rom version: e7ae62f[0m
+[0;32mI (432) net80211: net80211 rom version: e7ae62f[0m
+I (438) wifi:wifi driver task: 3fcc0ad4, prio:23, stack:6656, core=0
+[0;32mI (443) system_api: Base MAC address is not set[0m
+[0;32mI (448) system_api: read default base MAC address from EFUSE[0m
+I (458) wifi:wifi firmware version: 23fdf80
+I (458) wifi:wifi certification version: v7.0
+I (462) wifi:config NVS flash: enabled
+I (466) wifi:config nano formating: disabled
+I (470) wifi:Init data frame dynamic rx buffer num: 32
+I (475) wifi:Init static rx mgmt buffer num: 5
+I (479) wifi:Init management short buffer num: 32
+I (483) wifi:Init dynamic tx buffer num: 32
+I (487) wifi:Init static tx FG buffer num: 2
+I (491) wifi:Init static rx buffer size: 1600
+I (495) wifi:Init static rx buffer num: 10
+I (499) wifi:Init dynamic rx buffer num: 32
+[0;32mI (503) wifi_init: rx ba win: 6[0m
+[0;32mI (507) wifi_init: tcpip mbox: 32[0m
+[0;32mI (511) wifi_init: udp mbox: 6[0m
+[0;32mI (514) wifi_init: tcp mbox: 6[0m
+[0;32mI (518) wifi_init: tcp tx win: 5760[0m
+[0;32mI (522) wifi_init: tcp rx win: 5760[0m
+[0;32mI (527) wifi_init: tcp mss: 1440[0m
+[0;32mI (530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (535) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (542) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+I (577) wifi:mode : softAP (48:27:e2:e7:1e:19)
+I (579) wifi:Total power save buffer number: 16
+I (580) wifi:Init max length of beacon: 752/752
+I (580) wifi:Init max length of beacon: 752/752
+[0;32mI (583) WIFI_UDP: wifi_init_softap complete.SSID:ESP-DRONE_4827E2E71E19 password:12345678[0m
+[0;32mI (592) WIFI_UDP: Socket created[0m
+[0;32mI (596) WIFI_UDP: Socket bound, port 2390[0m
+[0;32mI (600) WIFI_UDP: UDP server create socket succeed!!![0m
+[0;32mI (1106) SYS: ----------------------------
+[0m
+[0;32mI (1106) SYS: ESPlane 2.0  is up and running!
+[0m
+[0;32mI (1107) I2CDRV:  i2c 1 driver install return = 0[0m
+[0;32mI (1110) EEPROM: spi_flash_init ... ![0m
+[0;32mI (1115) EEPROM: spi_flash_read ok ![0m
+Characterized using Default Vref
+[0;32mI (2426) I2CDRV:  i2c 0 driver install return = 0[0m
+[0;31mE (2426) SENSORS: MPU6050 I2C connection [FAIL].
+[0m
+
+assert failed: sensorsDeviceInit sensors_mpu6050_hm5883L_ms5611.c:429 (0)
+
+
+Backtrace: 0x403762a6:0x3fca14f0 0x4037e199:0x3fca1510 0x40385f02:0x3fca1530 0x42013fd7:0x3fca1650 0x42012751:0x3fca16a0 0x42012298:0x3fca16c0 0x4200a3c7:0x3fca16f0
+
+
+
+
+ELF file SHA256: 11bd6f35a8be6a5b
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c5b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1858
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x2f68
+SHA-256 comparison failed:
+Calculated: a6705381dc11110ccddbeb590f3dede8d56ddbd73fde4c47d5d2b29e7cc0ae49
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9930
+[0;32mI (42) boot: ESP-IDF v5.0.7-dirty 2nd stage bootloader[0m
+[0;32mI (42) boot: compile time 15:52:52[0m
+[0;32mI (43) boot: Multicore bootloader[0m
+[0;32mI (45) boot: chip revision: v0.2[0m
+[0;32mI (49) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (54) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (59) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (64) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (68) boot: Enabling RNG early entropy source...[0m
+[0;32mI (74) boot: Partition Table:[0m
+[0;32mI (77) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 0000900
